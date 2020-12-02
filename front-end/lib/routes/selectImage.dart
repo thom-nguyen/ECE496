@@ -1,17 +1,31 @@
 import 'dart:io';
 import 'package:flutter/material.dart';
+import 'package:foresight/routes/reviewImage.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class SelectImageScreen extends StatelessWidget {
-  File _image;
   final picker = ImagePicker();
 
   void _openGallery(context) async {
-    var _image = await picker.getImage(
+    PickedFile _pickedImage = await picker.getImage(
       source: ImageSource.gallery,
     );
-    Navigator.pushNamed(context, '/loading');
+
+    if (_pickedImage != null && _pickedImage.path != null) {
+      print(_pickedImage.path);
+      // Navigator.push(
+      //   context,
+      //   MaterialPageRoute(
+      //     builder: (context) => ReviewImageScreen(pickedImage: _pickedImage),
+      //   ),
+      // );
+      Navigator.pushNamed(
+        context,
+        '/reviewImage',
+        arguments: SelectImageArguments(_pickedImage.path),
+      );
+    }
   }
 
   @override
