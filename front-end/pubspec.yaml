@@ -1,0 +1,22 @@
+name: foresight
+description: A new Flutter project.
+
+version: 1.0.0
+
+environment:
+  sdk: '>=2.0.0-dev.68.0 <3.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  http: any
+  io: ^0.3.4
+  image_picker: ^0.6.7+14
+  google_fonts: ^1.1.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
