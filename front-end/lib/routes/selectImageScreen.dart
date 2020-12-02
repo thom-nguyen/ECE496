@@ -1,6 +1,6 @@
 import 'dart:io';
 import 'package:flutter/material.dart';
-import 'package:foresight/routes/reviewImage.dart';
+import 'package:foresight/routes/reviewImageScreen.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -55,8 +55,7 @@ class SelectImageScreen extends StatelessWidget {
                       ),
                       iconSize: 60.0,
                       onPressed: () {
-                        // TODO: check if context is null
-                        Navigator.pop(context);
+                        Navigator.pushNamed(context, '/');
                       },
                     ),
                   ],
