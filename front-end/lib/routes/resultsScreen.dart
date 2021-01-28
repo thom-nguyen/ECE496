@@ -1,26 +1,20 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-class ResultsScreen extends StatelessWidget {
-  Widget welcomeText = Column(
-    children: [
-      // Confidence Score
-      Container(
-        padding: const EdgeInsets.all(32),
-        child: Text(
-          'Confidence Score: ##',
-          style: GoogleFonts.lato(
-            color: Color(0xFF234256),
-            fontSize: 50,
-            fontWeight: FontWeight.w800,
-          ),
-          textAlign: TextAlign.center,
-        ),
-      ),
-    ],
-  );
+class ImageScreeningResults {
+  final double confidenceScore;
+  final String screeningMessage;
+  final String prediction;
 
+  ImageScreeningResults(
+      this.confidenceScore, this.screeningMessage, this.prediction);
+}
+
+class ResultsScreen extends StatelessWidget {
   Widget build(BuildContext context) {
+    final ImageScreeningResults imageScreeningResults =
+        ModalRoute.of(context).settings.arguments;
+
     return Scaffold(
       body: Container(
         color: Color(0xFFEFF3F6),
@@ -28,7 +22,37 @@ class ResultsScreen extends StatelessWidget {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
-              welcomeText,
+              Column(
+                children: [
+                  // Confidence Score
+                  Container(
+                    padding: const EdgeInsets.all(32),
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                      children: [
+                        Text(
+                          'Screening Result: \n${imageScreeningResults.prediction}\n\n',
+                          style: GoogleFonts.lato(
+                            color: Color(0xFF234256),
+                            fontSize: 30,
+                            fontWeight: FontWeight.w800,
+                          ),
+                          textAlign: TextAlign.center,
+                        ),
+                        Text(
+                          'Confidence Score: ${imageScreeningResults.confidenceScore}%',
+                          style: GoogleFonts.lato(
+                            color: Color(0xFF234256),
+                            fontSize: 40,
+                            fontWeight: FontWeight.w800,
+                          ),
+                          textAlign: TextAlign.center,
+                        ),
+                      ],
+                    ),
+                  ),
+                ],
+              ),
               Container(
                 height: 200.0,
                 child: Column(
@@ -77,7 +101,7 @@ class ResultsScreen extends StatelessWidget {
                           ),
                         ),
                         onPressed: () {
-                          Navigator.pushNamed(context, '/');
+                          Navigator.pushNamed(context, '/welcome');
                         },
                         color: Color(0xFF234256),
                       ),

@@ -6,4 +6,9 @@ class Constants {
       '2. Review your photo and then send it to us\n'
       '3. Wait for your diagnosis to be processed\n'
       '4. Review evaluation and confidence score\n';
+
+  static final String awsServer =
+      'http://ec2-35-183-150-9.ca-central-1.compute.amazonaws.com';
+
+  static final String uploadEndpoint = '/predict';
 }

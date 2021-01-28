@@ -7,6 +7,21 @@ import 'package:google_fonts/google_fonts.dart';
 class SelectImageScreen extends StatelessWidget {
   final picker = ImagePicker();
 
+  void _openCamera(context) async {
+    PickedFile _pickedImage = await picker.getImage(
+      source: ImageSource.camera,
+    );
+
+    if (_pickedImage != null && _pickedImage.path != null) {
+      print(_pickedImage.path);
+      Navigator.pushNamed(
+        context,
+        '/reviewImage',
+        arguments: SelectImageArguments(_pickedImage.path),
+      );
+    }
+  }
+
   void _openGallery(context) async {
     PickedFile _pickedImage = await picker.getImage(
       source: ImageSource.gallery,
@@ -14,12 +29,6 @@ class SelectImageScreen extends StatelessWidget {
 
     if (_pickedImage != null && _pickedImage.path != null) {
       print(_pickedImage.path);
-      // Navigator.push(
-      //   context,
-      //   MaterialPageRoute(
-      //     builder: (context) => ReviewImageScreen(pickedImage: _pickedImage),
-      //   ),
-      // );
       Navigator.pushNamed(
         context,
         '/reviewImage',
@@ -55,7 +64,7 @@ class SelectImageScreen extends StatelessWidget {
                       ),
                       iconSize: 60.0,
                       onPressed: () {
-                        Navigator.pushNamed(context, '/');
+                        Navigator.pushNamed(context, '/welcome');
                       },
                     ),
                   ],
@@ -92,7 +101,7 @@ class SelectImageScreen extends StatelessWidget {
                           height: 150.0,
                           child: FlatButton(
                             onPressed: () {
-                              _openGallery(context);
+                              _openCamera(context);
                             },
                             shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(20),

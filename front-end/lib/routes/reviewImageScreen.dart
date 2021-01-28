@@ -59,7 +59,12 @@ class ReviewImageScreen extends StatelessWidget {
                     height: 100.0,
                     child: FlatButton(
                       onPressed: () {
-                        Navigator.pushNamed(context, '/loading');
+
+                        Navigator.pushNamed(
+                          context,
+                          '/loading',
+                          arguments: SelectImageArguments(args.pickedImagePath)
+                        );
                       },
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(180.0),
