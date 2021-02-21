@@ -5514,5 +5514,322 @@
       }
     ],
     "file_attributes": {}
+  },
+  "L#NAIL#5nail#2003-2005 determined by ░µ╚╞#onychomycosis.png285504": {
+    "filename": "L#NAIL#5nail#2003-2005 determined by ░µ╚╞#onychomycosis.png",
+    "size": 285504,
+    "regions": [
+      {
+        "shape_attributes": {
+          "name": "polyline",
+          "all_points_x": [
+            102,
+            47,
+            35,
+            36,
+            58,
+            115,
+            115,
+            101
+          ],
+          "all_points_y": [
+            61,
+            70,
+            88,
+            118,
+            129,
+            120,
+            65,
+            61
+          ]
+        },
+        "region_attributes": {}
+      },
+      {
+        "shape_attributes": {
+          "name": "polyline",
+          "all_points_x": [
+            132,
+            142,
+            170,
+            199,
+            214,
+            217,
+            170,
+            131
+          ],
+          "all_points_y": [
+            62,
+            104,
+            127,
+            125,
+            87,
+            55,
+            50,
+            62
+          ]
+        },
+        "region_attributes": {}
+      },
+      {
+        "shape_attributes": {
+          "name": "polyline",
+          "all_points_x": [
+            270,
+            251,
+            245,
+            247,
+            255,
+            275,
+            301,
+            327,
+            336,
+            319,
+            269
+          ],
+          "all_points_y": [
+            60,
+            72,
+            87,
+            108,
+            120,
+            131,
+            135,
+            129,
+            91,
+            65,
+            60
+          ]
+        },
+        "region_attributes": {}
+      },
+      {
+        "shape_attributes": {
+          "name": "polyline",
+          "all_points_x": [
+            391,
+            369,
+            363,
+            363,
+            377,
+            396,
+            447,
+            449,
+            448,
+            442,
+            390
+          ],
+          "all_points_y": [
+            50,
+            67,
+            84,
+            113,
+            139,
+            148,
+            142,
+            119,
+            66,
+            52,
+            50
+          ]
+        },
+        "region_attributes": {}
+      },
+      {
+        "shape_attributes": {
+          "name": "polyline",
+          "all_points_x": [
+            562,
+            484,
+            473,
+            477,
+            496,
+            555,
+            561,
+            563,
+            562
+          ],
+          "all_points_y": [
+            60,
+            75,
+            94,
+            123,
+            140,
+            139,
+            127,
+            62,
+            60
+          ]
+        },
+        "region_attributes": {}
+      },
+      {
+        "shape_attributes": {
+          "name": "polyline",
+          "all_points_x": [
+            577,
+            615,
+            646,
+            666,
+            666,
+            647,
+            627,
+            578,
+            578
+          ],
+          "all_points_y": [
+            71,
+            64,
+            66,
+            97,
+            126,
+            137,
+            140,
+            132,
+            69
+          ]
+        },
+        "region_attributes": {}
+      },
+      {
+        "shape_attributes": {
+          "name": "polyline",
+          "all_points_x": [
+            693,
+            691,
+            692,
+            701,
+            731,
+            761,
+            785,
+            788,
+            785,
+            693
+          ],
+          "all_points_y": [
+            54,
+            78,
+            115,
+            138,
+            143,
+            141,
+            115,
+            89,
+            55,
+            56
+          ]
+        },
+        "region_attributes": {}
+      },
+      {
+        "shape_attributes": {
+          "name": "polyline",
+          "all_points_x": [
+            801,
+            801,
+            821,
+            848,
+            886,
+            898,
+            900,
+            892,
+            803,
+            801
+          ],
+          "all_points_y": [
+            57,
+            122,
+            139,
+            141,
+            135,
+            124,
+            69,
+            52,
+            55,
+            59
+          ]
+        },
+        "region_attributes": {}
+      },
+      {
+        "shape_attributes": {
+          "name": "polyline",
+          "all_points_x": [
+            913,
+            927,
+            962,
+            985,
+            989,
+            992,
+            990,
+            916,
+            911
+          ],
+          "all_points_y": [
+            134,
+            83,
+            66,
+            65,
+            81,
+            116,
+            145,
+            150,
+            135
+          ]
+        },
+        "region_attributes": {}
+      },
+      {
+        "shape_attributes": {
+          "name": "polyline",
+          "all_points_x": [
+            1046,
+            1039,
+            1041,
+            1045,
+            1117,
+            1118,
+            1086,
+            1044
+          ],
+          "all_points_y": [
+            70,
+            99,
+            127,
+            142,
+            144,
+            121,
+            72,
+            67
+          ]
+        },
+        "region_attributes": {}
+      },
+      {
+        "shape_attributes": {
+          "name": "polyline",
+          "all_points_x": [
+            1164,
+            1203,
+            1234,
+            1232,
+            1159,
+            1149,
+            1164
+          ],
+          "all_points_y": [
+            58,
+            59,
+            83,
+            138,
+            144,
+            102,
+            56
+          ]
+        },
+        "region_attributes": {}
+      }
+    ],
+    "file_attributes": {}
   }
 }
