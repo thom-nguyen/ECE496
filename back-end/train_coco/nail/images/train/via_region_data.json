@@ -1,0 +1,1924 @@
+{
+  "L#NAIL#5nail#5nail2003_1#normalnail.png1453689": {
+    "filename": "L#NAIL#5nail#5nail2003_1#normalnail.png",
+    "size": 1453689,
+    "regions": [
+      {
+        "shape_attributes": {
+          "name": "polyline",
+          "all_points_x": [
+            55,
+            34,
+            34,
+            69,
+            92,
+            112,
+            57
+          ],
+          "all_points_y": [
+            59,
+            92,
+            114,
+            129,
+            101,
+            69,
+            60
+          ]
+        },
+        "region_attributes": {
+          "nail": ""
+        }
+      },
+      {
+        "shape_attributes": {
+          "name": "polyline",
+          "all_points_x": [
+            136,
+            149,
+            175,
+            197,
+            194,
+            190,
+            135
+          ],
+          "all_points_y": [
+            65,
+            118,
+            129,
+            111,
+            75,
+            57,
+            63
+          ]
+        },
+        "region_attributes": {
+          "nail": ""
+        }
+      },
+      {
+        "shape_attributes": {
+          "name": "polyline",
+          "all_points_x": [
+            266,
+            296,
+            306,
+            296,
+            295,
+            263,
+            264
+          ],
+          "all_points_y": [
+            115,
+            134,
+            125,
+            83,
+            56,
+            86,
+            111
+          ]
+        },
+        "region_attributes": {
+          "nail": ""
+        }
+      },
+      {
+        "shape_attributes": {
+          "name": "polyline",
+          "all_points_x": [
+            366,
+            385,
+            412,
+            430,
+            408,
+            397,
+            368,
+            368
+          ],
+          "all_points_y": [
+            86,
+            129,
+            132,
+            114,
+            60,
+            55,
+            53,
+            89
+          ]
+        },
+        "region_attributes": {
+          "nail": ""
+        }
+      },
+      {
+        "shape_attributes": {
+          "name": "polyline",
+          "all_points_x": [
+            506,
+            494,
+            507,
+            532,
+            549,
+            510
+          ],
+          "all_points_y": [
+            70,
+            106,
+            122,
+            121,
+            79,
+            73
+          ]
+        },
+        "region_attributes": {
+          "nail": ""
+        }
+      },
+      {
+        "shape_attributes": {
+          "name": "polyline",
+          "all_points_x": [
+            621,
+            596,
+            608,
+            625,
+            664,
+            615
+          ],
+          "all_points_y": [
+            59,
+            99,
+            125,
+            128,
+            66,
+            59
+          ]
+        },
+        "region_attributes": {
+          "nail": ""
+        }
+      },
+      {
+        "shape_attributes": {
+          "name": "polyline",
+          "all_points_x": [
+            705,
+            717,
+            734,
+            757,
+            744,
+            707
+          ],
+          "all_points_y": [
+            76,
+            119,
+            124,
+            115,
+            70,
+            79
+          ]
+        },
+        "region_attributes": {
+          "nail": ""
+        }
+      },
+      {
+        "shape_attributes": {
+          "name": "polyline",
+          "all_points_x": [
+            807,
+            820,
+            868,
+            885,
+            871,
+            809
+          ],
+          "all_points_y": [
+            73,
+            114,
+            131,
+            116,
+            73,
+            75
+          ]
+        },
+        "region_attributes": {
+          "nail": ""
+        }
+      },
+      {
+        "shape_attributes": {
+          "name": "polyline",
+          "all_points_x": [
+            920,
+            935,
+            968,
+            984,
+            973,
+            920
+          ],
+          "all_points_y": [
+            80,
+            121,
+            124,
+            105,
+            66,
+            76
+          ]
+        },
+        "region_attributes": {
+          "nail": ""
+        }
+      },
+      {
+        "shape_attributes": {
+          "name": "polyline",
+          "all_points_x": [
+            1034,
+            1052,
+            1082,
+            1101,
+            1089,
+            1034
+          ],
+          "all_points_y": [
+            68,
+            124,
+            129,
+            124,
+            57,
+            62
+          ]
+        },
+        "region_attributes": {
+          "nail": ""
+        }
+      },
+      {
+        "shape_attributes": {
+          "name": "polyline",
+          "all_points_x": [
+            1142,
+            1157,
+            1178,
+            1213,
+            1204,
+            1142
+          ],
+          "all_points_y": [
+            70,
+            125,
+            131,
+            115,
+            52,
+            62
+          ]
+        },
+        "region_attributes": {
+          "nail": ""
+        }
+      },
+      {
+        "shape_attributes": {
+          "name": "polyline",
+          "all_points_x": [
+            1253,
+            1277,
+            1315,
+            1325,
+            1295,
+            1256,
+            1256
+          ],
+          "all_points_y": [
+            89,
+            132,
+            126,
+            106,
+            53,
+            50,
+            91
+          ]
+        },
+        "region_attributes": {
+          "nail": ""
+        }
+      },
+      {
+        "shape_attributes": {
+          "name": "polyline",
+          "all_points_x": [
+            1369,
+            1395,
+            1420,
+            1428,
+            1405,
+            1372
+          ],
+          "all_points_y": [
+            72,
+            116,
+            119,
+            96,
+            69,
+            72
+          ]
+        },
+        "region_attributes": {
+          "nail": ""
+        }
+      },
+      {
+        "shape_attributes": {
+          "name": "polyline",
+          "all_points_x": [
+            1480,
+            1476,
+            1486,
+            1526,
+            1567,
+            1562,
+            1487
+          ],
+          "all_points_y": [
+            52,
+            88,
+            134,
+            141,
+            82,
+            56,
+            56
+          ]
+        },
+        "region_attributes": {
+          "nail": ""
+        }
+      },
+      {
+        "shape_attributes": {
+          "name": "polyline",
+          "all_points_x": [
+            1592,
+            1601,
+            1669,
+            1675,
+            1613,
+            1595
+          ],
+          "all_points_y": [
+            59,
+            132,
+            139,
+            57,
+            50,
+            60
+          ]
+        },
+        "region_attributes": {
+          "nail": ""
+        }
+      },
+      {
+        "shape_attributes": {
+          "name": "polyline",
+          "all_points_x": [
+            1761,
+            1713,
+            1723,
+            1773,
+            1796,
+            1799,
+            1766
+          ],
+          "all_points_y": [
+            53,
+            115,
+            132,
+            131,
+            109,
+            56,
+            56
+          ]
+        },
+        "region_attributes": {
+          "nail": ""
+        }
+      },
+      {
+        "shape_attributes": {
+          "name": "polyline",
+          "all_points_x": [
+            1839,
+            1879,
+            1891,
+            1863,
+            1826,
+            1826,
+            1842
+          ],
+          "all_points_y": [
+            52,
+            108,
+            136,
+            145,
+            124,
+            47,
+            53
+          ]
+        },
+        "region_attributes": {
+          "nail": ""
+        }
+      },
+      {
+        "shape_attributes": {
+          "name": "polyline",
+          "all_points_x": [
+            1994,
+            1950,
+            1981,
+            1997,
+            1997
+          ],
+          "all_points_y": [
+            47,
+            106,
+            134,
+            122,
+            52
+          ]
+        },
+        "region_attributes": {
+          "nail": ""
+        }
+      },
+      {
+        "shape_attributes": {
+          "name": "polyline",
+          "all_points_x": [
+            2036,
+            2040,
+            2076,
+            2109,
+            2099,
+            2078,
+            2037
+          ],
+          "all_points_y": [
+            73,
+            102,
+            128,
+            116,
+            86,
+            72,
+            72
+          ]
+        },
+        "region_attributes": {
+          "nail": ""
+        }
+      },
+      {
+        "shape_attributes": {
+          "name": "polyline",
+          "all_points_x": [
+            2174,
+            2177,
+            2194,
+            2210,
+            2200,
+            2175
+          ],
+          "all_points_y": [
+            85,
+            108,
+            118,
+            109,
+            83,
+            82
+          ]
+        },
+        "region_attributes": {
+          "nail": ""
+        }
+      },
+      {
+        "shape_attributes": {
+          "name": "polyline",
+          "all_points_x": [
+            34,
+            19,
+            23,
+            80,
+            111,
+            112,
+            29
+          ],
+          "all_points_y": [
+            193,
+            214,
+            253,
+            263,
+            227,
+            197,
+            194
+          ]
+        },
+        "region_attributes": {
+          "nail": ""
+        }
+      },
+      {
+        "shape_attributes": {
+          "name": "polyline",
+          "all_points_x": [
+            164,
+            141,
+            145,
+            181,
+            221,
+            161
+          ],
+          "all_points_y": [
+            178,
+            218,
+            251,
+            254,
+            185,
+            181
+          ]
+        },
+        "region_attributes": {
+          "nail": ""
+        }
+      },
+      {
+        "shape_attributes": {
+          "name": "polyline",
+          "all_points_x": [
+            246,
+            286,
+            322,
+            332,
+            296,
+            243,
+            246
+          ],
+          "all_points_y": [
+            221,
+            181,
+            191,
+            238,
+            279,
+            274,
+            224
+          ]
+        },
+        "region_attributes": {
+          "nail": ""
+        }
+      },
+      {
+        "shape_attributes": {
+          "name": "polyline",
+          "all_points_x": [
+            356,
+            379,
+            448,
+            443,
+            407,
+            369,
+            359
+          ],
+          "all_points_y": [
+            226,
+            256,
+            256,
+            201,
+            195,
+            200,
+            223
+          ]
+        },
+        "region_attributes": {
+          "nail": ""
+        }
+      },
+      {
+        "shape_attributes": {
+          "name": "polyline",
+          "all_points_x": [
+            470,
+            497,
+            522,
+            542,
+            522,
+            467
+          ],
+          "all_points_y": [
+            210,
+            251,
+            256,
+            234,
+            187,
+            203
+          ]
+        },
+        "region_attributes": {
+          "nail": ""
+        }
+      },
+      {
+        "shape_attributes": {
+          "name": "polyline",
+          "all_points_x": [
+            579,
+            582,
+            621,
+            655,
+            658,
+            636,
+            576
+          ],
+          "all_points_y": [
+            193,
+            247,
+            264,
+            257,
+            236,
+            185,
+            188
+          ]
+        },
+        "region_attributes": {
+          "nail": ""
+        }
+      },
+      {
+        "shape_attributes": {
+          "name": "polyline",
+          "all_points_x": [
+            715,
+            714,
+            736,
+            764,
+            769,
+            714
+          ],
+          "all_points_y": [
+            187,
+            249,
+            263,
+            246,
+            175,
+            182
+          ]
+        },
+        "region_attributes": {
+          "nail": ""
+        }
+      },
+      {
+        "shape_attributes": {
+          "name": "polyline",
+          "all_points_x": [
+            803,
+            830,
+            861,
+            868,
+            836,
+            805,
+            805
+          ],
+          "all_points_y": [
+            214,
+            250,
+            257,
+            236,
+            182,
+            182,
+            211
+          ]
+        },
+        "region_attributes": {
+          "nail": ""
+        }
+      },
+      {
+        "shape_attributes": {
+          "name": "polyline",
+          "all_points_x": [
+            920,
+            934,
+            967,
+            984,
+            978,
+            925
+          ],
+          "all_points_y": [
+            185,
+            250,
+            257,
+            234,
+            182,
+            185
+          ]
+        },
+        "region_attributes": {
+          "nail": ""
+        }
+      },
+      {
+        "shape_attributes": {
+          "name": "polyline",
+          "all_points_x": [
+            1063,
+            1060,
+            1068,
+            1090,
+            1105,
+            1063
+          ],
+          "all_points_y": [
+            204,
+            236,
+            250,
+            250,
+            198,
+            198
+          ]
+        },
+        "region_attributes": {
+          "nail": ""
+        }
+      },
+      {
+        "shape_attributes": {
+          "name": "polyline",
+          "all_points_x": [
+            1154,
+            1157,
+            1182,
+            1211,
+            1201,
+            1157
+          ],
+          "all_points_y": [
+            187,
+            240,
+            257,
+            241,
+            178,
+            190
+          ]
+        },
+        "region_attributes": {
+          "nail": ""
+        }
+      },
+      {
+        "shape_attributes": {
+          "name": "polyline",
+          "all_points_x": [
+            1269,
+            1274,
+            1295,
+            1317,
+            1305,
+            1264
+          ],
+          "all_points_y": [
+            188,
+            236,
+            256,
+            240,
+            178,
+            185
+          ]
+        },
+        "region_attributes": {
+          "nail": ""
+        }
+      },
+      {
+        "shape_attributes": {
+          "name": "polyline",
+          "all_points_x": [
+            1379,
+            1418,
+            1437,
+            1434,
+            1382,
+            1378
+          ],
+          "all_points_y": [
+            226,
+            251,
+            240,
+            224,
+            180,
+            220
+          ]
+        },
+        "region_attributes": {
+          "nail": ""
+        }
+      },
+      {
+        "shape_attributes": {
+          "name": "polyline",
+          "all_points_x": [
+            1486,
+            1494,
+            1516,
+            1536,
+            1527,
+            1483
+          ],
+          "all_points_y": [
+            190,
+            240,
+            251,
+            234,
+            190,
+            191
+          ]
+        },
+        "region_attributes": {
+          "nail": ""
+        }
+      },
+      {
+        "shape_attributes": {
+          "name": "polyline",
+          "all_points_x": [
+            1586,
+            1631,
+            1658,
+            1668,
+            1654,
+            1618,
+            1589,
+            1589
+          ],
+          "all_points_y": [
+            224,
+            272,
+            261,
+            244,
+            208,
+            180,
+            181,
+            214
+          ]
+        },
+        "region_attributes": {
+          "nail": ""
+        }
+      },
+      {
+        "shape_attributes": {
+          "name": "polyline",
+          "all_points_x": [
+            1704,
+            1704,
+            1730,
+            1759,
+            1767,
+            1701
+          ],
+          "all_points_y": [
+            184,
+            228,
+            260,
+            257,
+            233,
+            180
+          ]
+        },
+        "region_attributes": {
+          "nail": ""
+        }
+      },
+      {
+        "shape_attributes": {
+          "name": "polyline",
+          "all_points_x": [
+            1843,
+            1842,
+            1852,
+            1872,
+            1879,
+            1846
+          ],
+          "all_points_y": [
+            210,
+            237,
+            243,
+            243,
+            214,
+            208
+          ]
+        },
+        "region_attributes": {
+          "nail": ""
+        }
+      },
+      {
+        "shape_attributes": {
+          "name": "polyline",
+          "all_points_x": [
+            1918,
+            1944,
+            1983,
+            2003,
+            1996,
+            1925,
+            1919
+          ],
+          "all_points_y": [
+            200,
+            259,
+            264,
+            241,
+            188,
+            190,
+            213
+          ]
+        },
+        "region_attributes": {
+          "nail": ""
+        }
+      },
+      {
+        "shape_attributes": {
+          "name": "polyline",
+          "all_points_x": [
+            2036,
+            2037,
+            2060,
+            2101,
+            2115,
+            2092,
+            2036
+          ],
+          "all_points_y": [
+            201,
+            231,
+            254,
+            259,
+            241,
+            198,
+            203
+          ]
+        },
+        "region_attributes": {
+          "nail": ""
+        }
+      },
+      {
+        "shape_attributes": {
+          "name": "polyline",
+          "all_points_x": [
+            2146,
+            2205,
+            2226,
+            2167,
+            2145,
+            2146
+          ],
+          "all_points_y": [
+            234,
+            251,
+            217,
+            197,
+            200,
+            236
+          ]
+        },
+        "region_attributes": {
+          "nail": ""
+        }
+      },
+      {
+        "shape_attributes": {
+          "name": "polyline",
+          "all_points_x": [
+            19,
+            86,
+            91,
+            69,
+            19,
+            20
+          ],
+          "all_points_y": [
+            318,
+            341,
+            369,
+            388,
+            366,
+            318
+          ]
+        },
+        "region_attributes": {
+          "nail": ""
+        }
+      },
+      {
+        "shape_attributes": {
+          "name": "polyline",
+          "all_points_x": [
+            135,
+            134,
+            180,
+            213,
+            203,
+            164,
+            136
+          ],
+          "all_points_y": [
+            333,
+            365,
+            382,
+            366,
+            343,
+            328,
+            338
+          ]
+        },
+        "region_attributes": {
+          "nail": ""
+        }
+      },
+      {
+        "shape_attributes": {
+          "name": "polyline",
+          "all_points_x": [
+            253,
+            253,
+            295,
+            322,
+            316,
+            253
+          ],
+          "all_points_y": [
+            315,
+            382,
+            398,
+            376,
+            351,
+            318
+          ]
+        },
+        "region_attributes": {
+          "nail": ""
+        }
+      },
+      {
+        "shape_attributes": {
+          "name": "polyline",
+          "all_points_x": [
+            369,
+            384,
+            399,
+            422,
+            425,
+            371
+          ],
+          "all_points_y": [
+            332,
+            372,
+            384,
+            375,
+            328,
+            332
+          ]
+        },
+        "region_attributes": {
+          "nail": ""
+        }
+      },
+      {
+        "shape_attributes": {
+          "name": "polyline",
+          "all_points_x": [
+            471,
+            481,
+            507,
+            526,
+            511,
+            468
+          ],
+          "all_points_y": [
+            316,
+            374,
+            392,
+            378,
+            310,
+            315
+          ]
+        },
+        "region_attributes": {
+          "nail": ""
+        }
+      },
+      {
+        "shape_attributes": {
+          "name": "polyline",
+          "all_points_x": [
+            601,
+            603,
+            624,
+            642,
+            626,
+            598
+          ],
+          "all_points_y": [
+            333,
+            358,
+            374,
+            365,
+            330,
+            330
+          ]
+        },
+        "region_attributes": {
+          "nail": ""
+        }
+      },
+      {
+        "shape_attributes": {
+          "name": "polyline",
+          "all_points_x": [
+            691,
+            691,
+            717,
+            753,
+            770,
+            749,
+            693
+          ],
+          "all_points_y": [
+            318,
+            348,
+            388,
+            391,
+            349,
+            315,
+            319
+          ]
+        },
+        "region_attributes": {
+          "nail": ""
+        }
+      },
+      {
+        "shape_attributes": {
+          "name": "polyline",
+          "all_points_x": [
+            826,
+            836,
+            851,
+            861,
+            869,
+            858,
+            826
+          ],
+          "all_points_y": [
+            330,
+            369,
+            382,
+            378,
+            336,
+            326,
+            329
+          ]
+        },
+        "region_attributes": {
+          "nail": ""
+        }
+      },
+      {
+        "shape_attributes": {
+          "name": "polyline",
+          "all_points_x": [
+            938,
+            934,
+            953,
+            978,
+            976,
+            938
+          ],
+          "all_points_y": [
+            325,
+            358,
+            374,
+            365,
+            328,
+            325
+          ]
+        },
+        "region_attributes": {
+          "nail": ""
+        }
+      },
+      {
+        "shape_attributes": {
+          "name": "polyline",
+          "all_points_x": [
+            1039,
+            1108,
+            1108,
+            1042,
+            1036,
+            1037
+          ],
+          "all_points_y": [
+            326,
+            312,
+            392,
+            399,
+            352,
+            326
+          ]
+        },
+        "region_attributes": {
+          "nail": ""
+        }
+      },
+      {
+        "shape_attributes": {
+          "name": "polyline",
+          "all_points_x": [
+            1155,
+            1159,
+            1187,
+            1201,
+            1190,
+            1152
+          ],
+          "all_points_y": [
+            330,
+            365,
+            375,
+            363,
+            325,
+            325
+          ]
+        },
+        "region_attributes": {
+          "nail": ""
+        }
+      },
+      {
+        "shape_attributes": {
+          "name": "polyline",
+          "all_points_x": [
+            1274,
+            1273,
+            1293,
+            1312,
+            1319,
+            1274
+          ],
+          "all_points_y": [
+            325,
+            358,
+            379,
+            365,
+            328,
+            323
+          ]
+        },
+        "region_attributes": {
+          "nail": ""
+        }
+      },
+      {
+        "shape_attributes": {
+          "name": "polyline",
+          "all_points_x": [
+            1395,
+            1389,
+            1391,
+            1411,
+            1431,
+            1441,
+            1398
+          ],
+          "all_points_y": [
+            333,
+            361,
+            375,
+            382,
+            369,
+            335,
+            333
+          ]
+        },
+        "region_attributes": {
+          "nail": ""
+        }
+      },
+      {
+        "shape_attributes": {
+          "name": "polyline",
+          "all_points_x": [
+            1504,
+            1487,
+            1484,
+            1487,
+            1509,
+            1537,
+            1557,
+            1562,
+            1503
+          ],
+          "all_points_y": [
+            312,
+            353,
+            371,
+            391,
+            401,
+            397,
+            382,
+            316,
+            320
+          ]
+        },
+        "region_attributes": {
+          "nail": ""
+        }
+      },
+      {
+        "shape_attributes": {
+          "name": "polyline",
+          "all_points_x": [
+            1605,
+            1634,
+            1645,
+            1642,
+            1611,
+            1602
+          ],
+          "all_points_y": [
+            333,
+            329,
+            343,
+            361,
+            401,
+            326
+          ]
+        },
+        "region_attributes": {
+          "nail": ""
+        }
+      },
+      {
+        "shape_attributes": {
+          "name": "polyline",
+          "all_points_x": [
+            1780,
+            1715,
+            1713,
+            1731,
+            1774,
+            1780
+          ],
+          "all_points_y": [
+            333,
+            356,
+            374,
+            386,
+            388,
+            338
+          ]
+        },
+        "region_attributes": {
+          "nail": ""
+        }
+      },
+      {
+        "shape_attributes": {
+          "name": "polyline",
+          "all_points_x": [
+            1826,
+            1846,
+            1884,
+            1902,
+            1859,
+            1839,
+            1817,
+            1826
+          ],
+          "all_points_y": [
+            348,
+            336,
+            323,
+            361,
+            372,
+            372,
+            358,
+            345
+          ]
+        },
+        "region_attributes": {
+          "nail": ""
+        }
+      },
+      {
+        "shape_attributes": {
+          "name": "polyline",
+          "all_points_x": [
+            1961,
+            1947,
+            1947,
+            1954,
+            1984,
+            2006,
+            1958
+          ],
+          "all_points_y": [
+            320,
+            349,
+            366,
+            381,
+            382,
+            326,
+            325
+          ]
+        },
+        "region_attributes": {
+          "nail": ""
+        }
+      },
+      {
+        "shape_attributes": {
+          "name": "polyline",
+          "all_points_x": [
+            2034,
+            2062,
+            2093,
+            2121,
+            2131,
+            2118,
+            2089,
+            2037,
+            2033
+          ],
+          "all_points_y": [
+            322,
+            307,
+            309,
+            328,
+            361,
+            378,
+            401,
+            399,
+            326
+          ]
+        },
+        "region_attributes": {
+          "nail": ""
+        }
+      },
+      {
+        "shape_attributes": {
+          "name": "polyline",
+          "all_points_x": [
+            2187,
+            2168,
+            2175,
+            2200,
+            2240,
+            2241,
+            2188
+          ],
+          "all_points_y": [
+            338,
+            353,
+            366,
+            371,
+            362,
+            341,
+            341
+          ]
+        },
+        "region_attributes": {
+          "nail": ""
+        }
+      },
+      {
+        "shape_attributes": {
+          "name": "polyline",
+          "all_points_x": [
+            26,
+            88,
+            103,
+            80,
+            43,
+            16,
+            26
+          ],
+          "all_points_y": [
+            440,
+            476,
+            493,
+            514,
+            509,
+            499,
+            440
+          ]
+        },
+        "region_attributes": {
+          "nail": ""
+        }
+      },
+      {
+        "shape_attributes": {
+          "name": "polyline",
+          "all_points_x": [
+            128,
+            164,
+            205,
+            217,
+            201,
+            161,
+            131,
+            129
+          ],
+          "all_points_y": [
+            440,
+            434,
+            464,
+            490,
+            503,
+            503,
+            474,
+            444
+          ]
+        },
+        "region_attributes": {
+          "nail": ""
+        }
+      },
+      {
+        "shape_attributes": {
+          "name": "polyline",
+          "all_points_x": [
+            254,
+            295,
+            330,
+            335,
+            310,
+            282,
+            250
+          ],
+          "all_points_y": [
+            468,
+            453,
+            445,
+            478,
+            497,
+            509,
+            473
+          ]
+        },
+        "region_attributes": {
+          "nail": ""
+        }
+      },
+      {
+        "shape_attributes": {
+          "name": "polyline",
+          "all_points_x": [
+            384,
+            368,
+            371,
+            394,
+            415,
+            434,
+            384
+          ],
+          "all_points_y": [
+            448,
+            484,
+            509,
+            514,
+            506,
+            455,
+            455
+          ]
+        },
+        "region_attributes": {
+          "nail": ""
+        }
+      },
+      {
+        "shape_attributes": {
+          "name": "polyline",
+          "all_points_x": [
+            493,
+            490,
+            501,
+            524,
+            552,
+            547,
+            487
+          ],
+          "all_points_y": [
+            445,
+            491,
+            519,
+            513,
+            455,
+            444,
+            454
+          ]
+        },
+        "region_attributes": {
+          "nail": ""
+        }
+      },
+      {
+        "shape_attributes": {
+          "name": "polyline",
+          "all_points_x": [
+            589,
+            609,
+            638,
+            655,
+            644,
+            591
+          ],
+          "all_points_y": [
+            444,
+            507,
+            517,
+            491,
+            438,
+            445
+          ]
+        },
+        "region_attributes": {
+          "nail": ""
+        }
+      },
+      {
+        "shape_attributes": {
+          "name": "polyline",
+          "all_points_x": [
+            713,
+            711,
+            721,
+            751,
+            763,
+            713
+          ],
+          "all_points_y": [
+            445,
+            491,
+            520,
+            522,
+            448,
+            447
+          ]
+        },
+        "region_attributes": {
+          "nail": ""
+        }
+      },
+      {
+        "shape_attributes": {
+          "name": "polyline",
+          "all_points_x": [
+            806,
+            833,
+            889,
+            892,
+            858,
+            802,
+            803
+          ],
+          "all_points_y": [
+            454,
+            444,
+            474,
+            516,
+            523,
+            522,
+            448
+          ]
+        },
+        "region_attributes": {
+          "nail": ""
+        }
+      },
+      {
+        "shape_attributes": {
+          "name": "polyline",
+          "all_points_x": [
+            932,
+            924,
+            924,
+            943,
+            983,
+            997,
+            1000,
+            934
+          ],
+          "all_points_y": [
+            438,
+            455,
+            524,
+            533,
+            529,
+            510,
+            440,
+            440
+          ]
+        },
+        "region_attributes": {
+          "nail": ""
+        }
+      },
+      {
+        "shape_attributes": {
+          "name": "polyline",
+          "all_points_x": [
+            1080,
+            1052,
+            1052,
+            1070,
+            1105,
+            1108,
+            1085
+          ],
+          "all_points_y": [
+            435,
+            463,
+            490,
+            516,
+            496,
+            445,
+            437
+          ]
+        },
+        "region_attributes": {
+          "nail": ""
+        }
+      },
+      {
+        "shape_attributes": {
+          "name": "polyline",
+          "all_points_x": [
+            1187,
+            1139,
+            1139,
+            1148,
+            1234,
+            1236,
+            1184
+          ],
+          "all_points_y": [
+            441,
+            468,
+            520,
+            530,
+            532,
+            450,
+            437
+          ]
+        },
+        "region_attributes": {
+          "nail": ""
+        }
+      },
+      {
+        "shape_attributes": {
+          "name": "polyline",
+          "all_points_x": [
+            1263,
+            1286,
+            1330,
+            1336,
+            1263,
+            1260,
+            1269
+          ],
+          "all_points_y": [
+            461,
+            443,
+            461,
+            520,
+            527,
+            463,
+            457
+          ]
+        },
+        "region_attributes": {
+          "nail": ""
+        }
+      },
+      {
+        "shape_attributes": {
+          "name": "polyline",
+          "all_points_x": [
+            1391,
+            1402,
+            1417,
+            1457,
+            1458,
+            1447,
+            1409,
+            1392
+          ],
+          "all_points_y": [
+            474,
+            457,
+            463,
+            494,
+            510,
+            520,
+            504,
+            473
+          ]
+        },
+        "region_attributes": {
+          "nail": ""
+        }
+      },
+      {
+        "shape_attributes": {
+          "name": "polyline",
+          "all_points_x": [
+            1509,
+            1499,
+            1534,
+            1559,
+            1567,
+            1510
+          ],
+          "all_points_y": [
+            470,
+            488,
+            504,
+            503,
+            486,
+            468
+          ]
+        },
+        "region_attributes": {
+          "nail": ""
+        }
+      }
+    ],
+    "file_attributes": {}
+  },
+  "B1_OM (2).jpg164404": {
+    "filename": "B1_OM (2).jpg",
+    "size": 164404,
+    "regions": [
+      {
+        "shape_attributes": {
+          "name": "polyline",
+          "all_points_x": [
+            1,
+            1,
+            53,
+            118,
+            189,
+            306,
+            431,
+            512,
+            571,
+            605,
+            612,
+            608,
+            601,
+            1
+          ],
+          "all_points_y": [
+            1,
+            401,
+            480,
+            534,
+            566,
+            589,
+            572,
+            527,
+            466,
+            352,
+            271,
+            133,
+            1,
+            1
+          ]
+        },
+        "region_attributes": {
+          "body part": "toe\n"
+        }
+      }
+    ],
+    "file_attributes": {}
+  }
+}
