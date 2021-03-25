@@ -1,5 +1,7 @@
 import 'dart:io';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class SelectImageArguments {
   final String pickedImagePath;
@@ -14,68 +16,114 @@ class ReviewImageScreen extends StatelessWidget {
 
     return Scaffold(
       body: Container(
-        color: Color(0xFFEFF3F6),
+        color: Theme.of(context).backgroundColor,
         child: Center(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               Container(
-                width: 350.0,
-                height: 500.0,
+                padding: const EdgeInsets.fromLTRB(12.0, 0.0, 20.0, 0.0),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    // Back arrow
+                    IconButton(
+                      icon: Icon(
+                        Icons.arrow_back_rounded,
+                        color: Theme.of(context).primaryColor,
+                      ),
+                      iconSize: 60.0,
+                      onPressed: () {
+                        Navigator.pushNamed(context, '/selectImage');
+                      },
+                    ),
+                    // Title name
+                    Text(
+                      'ForeSight',
+                      style: GoogleFonts.roboto(
+                        color: Theme.of(context).accentColor,
+                        fontSize: 40,
+                        fontWeight: FontWeight.w800,
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+
+              // Displaying selected image to user
+              Container(
+                width: 300.0,
+                height: 400.0,
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(30.0),
                   image: DecorationImage(
                     image: FileImage(File(args.pickedImagePath)),
                     fit: BoxFit.cover,
                   ),
+                  boxShadow: [
+                    BoxShadow(
+                      color: Theme.of(context).shadowColor,
+                      spreadRadius: 1,
+                      blurRadius: 6,
+                      offset: Offset(0, 3),
+                    )
+                  ],
+                  border: Border.all(
+                      width: 1.5, color: Theme.of(context).primaryColor),
                 ),
               ),
+
               // Button Row
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
-                  ButtonTheme(
-                    minWidth: 100.0,
-                    height: 100.0,
-                    child: FlatButton(
+                  SizedBox(
+                    width: 150.0,
+                    height: 50.0,
+                    child: ElevatedButton(
                       onPressed: () {
                         Navigator.pop(context);
                       },
-                      shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(180.0),
-                        side: BorderSide.none,
+                      style: ElevatedButton.styleFrom(
+                        primary: Theme.of(context).backgroundColor,
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(180.0),
+                          side: BorderSide(
+                              width: 2.0,
+                              color: Theme.of(context).primaryColor),
+                        ),
+                        elevation: 10.0,
                       ),
-                      child: Icon(
-                        Icons.close_rounded,
-                        color: Color(0xFFEFF3F6),
-                        size: 70.0,
+                      child: FaIcon(
+                        FontAwesomeIcons.redoAlt,
+                        color: Theme.of(context).primaryColor,
+                        size: 30.0,
                       ),
-                      color: Color(0xFF234256),
                     ),
                   ),
-                  ButtonTheme(
-                    minWidth: 100.0,
-                    height: 100.0,
-                    child: FlatButton(
+                  SizedBox(
+                    width: 150.0,
+                    height: 50.0,
+                    child: ElevatedButton(
                       onPressed: () {
-
-                        Navigator.pushNamed(
-                          context,
-                          '/loading',
-                          arguments: SelectImageArguments(args.pickedImagePath)
-                        );
+                        Navigator.pushNamed(context, '/loading',
+                            arguments:
+                                SelectImageArguments(args.pickedImagePath));
                       },
-                      shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(180.0),
-                        side: BorderSide.none,
+                      style: ElevatedButton.styleFrom(
+                        primary: Theme.of(context).primaryColor,
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(180.0),
+                          side: BorderSide.none,
+                        ),
+                        elevation: 10.0,
                       ),
-                      child: Icon(
-                        Icons.check_rounded,
-                        color: Color(0xFFEFF3F6),
-                        size: 60.0,
+                      child: FaIcon(
+                        FontAwesomeIcons.check,
+                        color: Theme.of(context).backgroundColor,
+                        size: 35.0,
                       ),
-                      color: Color(0xFF234256),
                     ),
                   ),
                 ],

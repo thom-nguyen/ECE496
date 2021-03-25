@@ -1,3 +1,4 @@
+import 'dart:async';
 import 'dart:convert';
 import 'dart:io';
 
@@ -21,30 +22,41 @@ class NetworkException implements Exception {}
 
 class ApiClient {
   final String pickedImagePath;
-  double confidenceScore;
-  String screeningMessage;
+  int statusCode;
+  double probability;
+  String description;
   String prediction;
+  String symptoms;
+  bool isConditionSupported = false;
 
   ApiClient(this.pickedImagePath);
 
   returnResponseOrThrowException(response) {
-    if (response.statusCode == 200) {
+    statusCode = response.statusCode;
+    print("Status code: $statusCode\n");
+
+    if (statusCode == 200) {
       print("Uploaded complete.");
       Map<String, dynamic> responseBody = jsonDecode(response.body);
-      confidenceScore = responseBody["confidence"];
-      screeningMessage = responseBody["message"];
+      probability = double.parse(responseBody["probability"]);
+      description = responseBody["description"];
       prediction = responseBody["prediction"];
+      symptoms = responseBody["ss"];
 
-      print("Confidence score: $confidenceScore");
-      print("Message: $screeningMessage");
+      if (prediction == Constants.basalCellCarcinoma ||
+          prediction == Constants.onychomycosis) {
+        isConditionSupported = true;
+      } else {
+        isConditionSupported = false;
+      }
+
+      print("Probability score: $probability");
+      print("Description: $description");
       print("Prediction result: $prediction");
-    } else {
-      print("Non-200 response code: ${response.statusCode}\n");
+      print("Symptoms: $symptoms");
     }
 
     print("This is the response: " + response.toString() + "\n");
-
-    return response;
   }
 
   uploadImage() async {
@@ -62,15 +74,27 @@ class ApiClient {
     var body = json.encode(data);
 
     print("Uploading image...");
-    await http
-        .post(
-          postApiUri,
-          headers: <String, String>{
-            'Content-Type': 'application/json; charset=UTF-8',
-          },
-          body: body,
-        )
-        .then((response) => returnResponseOrThrowException(response));
+
+    try {
+      await http
+          .post(
+            postApiUri,
+            headers: <String, String>{
+              'Content-Type': 'application/json; charset=UTF-8',
+            },
+            body: body,
+          )
+          .then((response) => returnResponseOrThrowException(response))
+          .catchError((e) {
+        print(e);
+        statusCode = 400;
+      });
+    } catch (e) {
+      print(e);
+      statusCode = 400;
+    }
+
+    return statusCode;
   }
 }
 
@@ -81,6 +105,13 @@ class LoadingProgress extends StatefulWidget {
 
 class _LoadingProgressState extends State<LoadingProgress> {
   ApiClient api;
+  Timer timer;
+
+  @override
+  void dispose() {
+    super.dispose();
+    timer.cancel();
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -88,24 +119,31 @@ class _LoadingProgressState extends State<LoadingProgress> {
     api = new ApiClient(args.pickedImagePath);
 
     uploadImage() async {
-      await api.uploadImage();
-      Navigator.pushNamed(
-        context,
-        '/results',
-        arguments: ImageScreeningResults(
-            api.confidenceScore, api.screeningMessage, api.prediction),
-      );
+      int statusCode = await api.uploadImage();
+      timer = new Timer(const Duration(seconds: 2), () {
+        if (statusCode == 200) {
+          Navigator.pushNamed(
+            context,
+            '/results',
+            arguments: ImageScreeningResults(api.isConditionSupported, api.prediction, api.probability, api.description, api.symptoms),
+          );
+        } else {
+          Navigator.pushNamed(context, '/error');
+        }
+      });
     }
 
-    uploadImage(); 
+    uploadImage();
 
     return SizedBox(
-      height: 150.0,
-      width: 150.0,
+      height: 175.0,
+      width: 175.0,
       child: CircularProgressIndicator(
-        valueColor: AlwaysStoppedAnimation<Color>(Color(0xFF234256)),
-        strokeWidth: 20.0,
+        valueColor:
+            AlwaysStoppedAnimation<Color>(Theme.of(context).primaryColor),
+        strokeWidth: 18.0,
         semanticsLabel: 'Loading screening results.',
+        backgroundColor: Color(0xFF94B4E1),
       ),
     );
   }
@@ -116,24 +154,63 @@ class LoadingScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Container(
-        color: Color(0xFFEFF3F6),
+        color: Theme.of(context).backgroundColor,
         child: Center(
           child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-              LoadingProgress(),
               Container(
-                padding: const EdgeInsets.all(40.0),
-                child: Text(
-                  'Loading...',
-                  style: GoogleFonts.lato(
-                    color: Color(0xFF234256),
-                    fontSize: 50,
-                    fontWeight: FontWeight.w800,
-                  ),
-                  textAlign: TextAlign.center,
+                margin: const EdgeInsets.all(0),
+                padding: const EdgeInsets.fromLTRB(12.0, 20.0, 20.0, 60.0),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    // Back arrow
+                    IconButton(
+                      icon: Icon(
+                        Icons.arrow_back_rounded,
+                        color: Theme.of(context).primaryColor,
+                      ),
+                      iconSize: 60.0,
+                      onPressed: () {
+                        Navigator.pop(context);
+                      },
+                    ),
+
+                    // Title name
+                    Text(
+                      'ForeSight',
+                      style: GoogleFonts.roboto(
+                        color: Theme.of(context).accentColor,
+                        fontSize: 40,
+                        fontWeight: FontWeight.w800,
+                      ),
+                    ),
+                  ],
                 ),
+              ),
+              Container(
+                height: 450.0,
+                padding: const EdgeInsets.only(bottom: 100.0),
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.spaceAround,
+                  children: [
+                    Text(
+                      'Loading...',
+                      style: GoogleFonts.roboto(
+                        color: Theme.of(context).hintColor,
+                        fontSize: 45,
+                        fontWeight: FontWeight.w700,
+                      ),
+                      textAlign: TextAlign.center,
+                    ),
+                    LoadingProgress(),
+                  ],
+                ),
+              ),
+              Container(
+                height: 50.0,
               ),
             ],
           ),

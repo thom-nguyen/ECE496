@@ -1,4 +1,3 @@
-import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:foresight/routes/reviewImageScreen.dart';
 import 'package:image_picker/image_picker.dart';
@@ -41,130 +40,106 @@ class SelectImageScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Container(
-        color: Color(0xFFEFF3F6),
+        color: Theme.of(context).backgroundColor,
         child: Center(
           child: Column(
-            //Center Column contents vertically,
-            mainAxisAlignment: MainAxisAlignment.center,
-            //Center Column contents vertically,
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               Container(
-                padding: const EdgeInsets.only(
-                  left: 12.0,
-                  top: 0.0,
-                  bottom: 40.0,
-                ),
+                margin: const EdgeInsets.all(0),
+                padding: const EdgeInsets.fromLTRB(12.0, 0.0, 20.0, 40.0),
                 child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
+                    // Back arrow
                     IconButton(
                       icon: Icon(
                         Icons.arrow_back_rounded,
-                        color: Color(0xFF234256),
+                        color: Theme.of(context).primaryColor,
                       ),
                       iconSize: 60.0,
                       onPressed: () {
                         Navigator.pushNamed(context, '/welcome');
                       },
                     ),
+                    // Title name
+
+                    Text(
+                      'ForeSight',
+                      style: GoogleFonts.roboto(
+                        color: Theme.of(context).accentColor,
+                        fontSize: 40,
+                        fontWeight: FontWeight.w800,
+                      ),
+                    ),
                   ],
                 ),
               ),
 
-              // Back arrow
               Container(
-                padding: const EdgeInsets.only(
-                  top: 20.0,
-                ),
+                padding: const EdgeInsets.fromLTRB(10.0, 20.0, 10.0, 0.0),
                 child: Text(
                   'Upload your photo!',
-                  style: GoogleFonts.lato(
-                    fontSize: 55,
-                    fontWeight: FontWeight.w800,
-                    color: Color(0xFF234256),
+                  style: GoogleFonts.roboto(
+                    fontSize: 50,
+                    fontWeight: FontWeight.w700,
+                    color: Theme.of(context).hintColor,
                   ),
                   textAlign: TextAlign.center,
                 ),
               ),
+
+              // Image selection options
               Container(
                 padding: const EdgeInsets.only(
-                  top: 60,
-                  bottom: 80,
+                  bottom: 100,
                 ),
-                child: Column(
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                      children: [
-                        ButtonTheme(
-                          minWidth: 150.0,
-                          height: 150.0,
-                          child: FlatButton(
-                            onPressed: () {
-                              _openCamera(context);
-                            },
-                            shape: RoundedRectangleBorder(
-                              borderRadius: BorderRadius.circular(20),
-                              side: BorderSide.none,
-                            ),
-                            child: Icon(
-                              Icons.camera_alt,
-                              color: Color(0xFFEFF3F6),
-                              size: 90.0,
-                            ),
-                            color: Color(0xFF234256),
+                    SizedBox(
+                      width: 150.0,
+                      height: 150.0,
+                      child: ElevatedButton(
+                        onPressed: () {
+                          _openCamera(context);
+                        },
+                        style: ElevatedButton.styleFrom(
+                          primary: Theme.of(context).primaryColor,
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(30),
+                            side: BorderSide.none,
                           ),
+                          elevation: 10.0,
                         ),
-                        ButtonTheme(
-                          minWidth: 150.0,
-                          height: 150.0,
-                          child: FlatButton(
-                            onPressed: () {
-                              _openGallery(context);
-                            },
-                            shape: RoundedRectangleBorder(
-                              borderRadius: BorderRadius.circular(20),
-                              side: BorderSide.none,
-                            ),
-                            child: Icon(
-                              Icons.add_photo_alternate_rounded,
-                              color: Color(0xFFEFF3F6),
-                              size: 90.0,
-                            ),
-                            color: Color(0xFF234256),
-                          ),
+                        child: Icon(
+                          Icons.camera_alt,
+                          color: Theme.of(context).backgroundColor,
+                          size: 90.0,
                         ),
-                      ],
-                    ),
-                    // Camera and Gallery labels
-                    Container(
-                      padding: const EdgeInsets.only(
-                        left: 10.0,
-                        right: 16.0,
-                        top: 12.0,
                       ),
-                      child: Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceAround,
-                        children: [
-                          Text(
-                            'Camera',
-                            style: GoogleFonts.lato(
-                              fontSize: 33,
-                              fontWeight: FontWeight.w500,
-                              color: Color(0xFF234256),
-                            ),
-                            textAlign: TextAlign.center,
+                    ),
+                    SizedBox(
+                      width: 150.0,
+                      height: 150.0,
+                      child: ElevatedButton(
+                        onPressed: () {
+                          _openGallery(context);
+                        },
+                        style: ElevatedButton.styleFrom(
+                          primary: Theme.of(context).primaryColor,
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(30),
+                            side: BorderSide.none,
                           ),
-                          Text(
-                            'Gallery',
-                            style: GoogleFonts.lato(
-                              fontSize: 33,
-                              fontWeight: FontWeight.w500,
-                              color: Color(0xFF234256),
-                            ),
-                            textAlign: TextAlign.center,
-                          ),
-                        ],
+                          elevation: 10.0,
+                        ),
+                        child: Icon(
+                          Icons.add_photo_alternate_rounded,
+                          color: Theme.of(context).backgroundColor,
+                          size: 90.0,
+                        ),
                       ),
                     ),
                   ],
